@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho final de TWA - Livro Jogo - 5 </title>
+     <link rel="icon" type="image/png" href="./imagens/sherlock1.png" sizes="32x32">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+
+<body>
+
+
+    <div class="container">
+
+        <div class="grid">
+
+            <div class="header">
+
+                <img src="./imagens/sherlock1.png">
+
+                <h1>A liga dos ruivos</h1>
+
+
+
+            </div>
+
+
+
+            <div class="content">
+
+
+                <h1>Como jogar</h1>
+                <p>Este é um livro-jogo interativo. Você avança pela história tomando decisões que alteram o rumo da
+                    aventura.</p>
+                <ul>
+                    <li>Leia o texto do capítulo atual.</li>
+                    <li>Escolha uma das opções clicando nos botões.</li>
+                    <li>Gerencie sua ficha de personagem (Vida, Força, Sorte, Inventário).</li>
+                    <li>Em alguns momentos, role os dados para testar sua sorte.</li>
+                    <li>Algumas opções há perda de vida. Se chegar a 0 vidas, derrota por GAME OVER.</li>
+                    <li>Sempre que perder vida, aparecerá um botão para caso queira tentar a sorte e recuparar VIDA, mas cuidado, em caso de resultado ruim na rolagem, perderá mais VIDA ainda.</li>
+                    <li>Existem múltiplos finais possíveis. Explore e descubra todos!</li>
+                </ul>
+                <a href="index.html" class="botao-jogo">Voltar ao jogo</a>
+
+
+
+
+            </div>
+
+
+            <div class="menu">
+                <h3>Ficha do Personagem</h3>
+                <p id="atributos">Vida: 10 | Força: 5 | Sorte: 3</p>
+                <h4>Inventário</h4>
+                <ul id="inventario"></ul>
+
+                <!-- Link para instruções -->
+                <a href="como-jogar.html" class="botao-jogo">Como jogar</a>
+
+            </div>
+
+
+             <div class="inventario">
+                <h3>Inventário</h3>
+               
+                 <ul id="inventario"></ul>
+
+            </div>
+
+
+            <div class="footer">
+
+                <h4>Sherlock Holmes em - A Liga dos Ruivos</h4>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Importa o script principal como módulo -->
+    <script type="module" src="./js/main.js"></script>
+
+</body>
+
+
+</html>

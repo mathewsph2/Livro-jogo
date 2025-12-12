@@ -1,0 +1,1165 @@
+{
+  "1": {
+    "texto": "Em pleno 221B Baker Street, Jabez Wilson irrompe pela porta, ofegante e visivelmente perturbado. Relata a Holmes e Watson um curioso anúncio que o atraiu: “Procura-se um cavalheiro ruivo para integrar a enigmática Liga dos Ruivos.” A proposta? Quatro libras semanais — algo em torno de 750 dólares — para trabalhar das 10h às 14h, transcrevendo enciclopédias antigas. Holmes permanece em silêncio, atento aos detalhes; Watson registra cada palavra. \nAgora, cabe a você decidir o próximo passo.",
+    "opcoes": [
+      {
+        "texto": "Ir com Holmes à loja de Wilson",
+        "vaiPara": "2",
+        "efeitos": {
+          "investigacao": 1
+        }
+      },
+      {
+        "texto": "Investigar a sede da Liga sozinho",
+        "vaiPara": "3",
+        "efeitos": {
+          "vida": -2
+        }
+      }
+    ],
+    "item": {
+      "nome": "Informações Iniciais de Jabez Wilson",
+      "efeito": " "
+    }
+  },
+  "2": {
+    "texto": "A pequena loja de penhores de Wilson revela-se abafada, com o ar impregnado pelo cheiro de metal e objetos esquecidos. Atrás do balcão, Vincent Spaulding atende com aparente normalidade, mas sua constante descida ao porão desperta suspeitas imediatas. A decisão de acompanhar Holmes até o local mostra-se acertada: o olhar atento do detetive capta detalhes que poderiam passar despercebidos. Sua escolha rende frutos — você conquista +2 pontos em investigação.",
+    "opcoes": [
+      {
+        "texto": "Observar Spaulding discretamente",
+        "vaiPara": "4",
+        "efeitos": {
+          "sorte": 1
+        }
+      },
+      {
+        "texto": "Conversar com Jabez para ganhar confiança",
+        "vaiPara": "5",
+        "efeitos": {
+          "sorte": 1,
+          "item_add": "Confiança de Jabez"
+        }
+      }
+    ],
+    "teste": {
+      "tipo": "furtividade",
+      "dificuldade": 8,
+      "rolagem": "2d6"
+    },
+    "item": {
+      "nome": "Luvas de Couro",
+      "efeito": "+2 investigacao"
+    }
+  },
+  "3": {
+    "texto": "A sede da Liga é silenciosa. Duncan Ross explica o trabalho: copiar a Enciclopédia Britânica. Há marcas de terra na soleira e um compartimento trancado. Você tomou uma decisão arriscada que poderia ter comprometido a investigação e perdeu 2 pontos de vida.",
+    "opcoes": [
+      {
+        "texto": "Aceitar o trabalho para se infiltrar",
+        "vaiPara": "6",
+        "efeitos": {
+          "sorte": 1
+        }
+      },
+      {
+        "texto": "Observar a sede sem aceitar",
+        "vaiPara": "7",
+        "efeitos": {
+          "sorte": 0
+        }
+      }
+    ],
+    "teste": {
+      "tipo": "investigacao",
+      "dificuldade": 8,
+      "rolagem": "2d6"
+    },
+    "item": {
+      "nome": "Capa de Infiltração",
+      "efeito": "-2 vida"
+    }
+  },
+  "4": {
+    "texto": "Você decide seguir Spaulding discretamente até o porão. O ambiente é abafado, com ferramentas espalhadas e sacos de terra empilhados como se escondessem algum trabalho subterrâneo. Ao observar seu rosto à luz fraca, um detalhe inquietante chama sua atenção — há algo que ele tenta disfarçar. Vasculhando o espaço, encontra um papel amassado com rabiscos que lembram mapas secretos. A descoberta reforça suas suspeitas e lhe rende +2 pontos em investigação.",
+    "opcoes": [
+      {
+        "texto": "Seguir mais de perto",
+        "vaiPara": "8",
+        "efeitos": {
+          "sorte": 1
+        }
+      },
+      {
+        "texto": "Voltar e avisar Holmes",
+        "vaiPara": "9",
+        "efeitos": {
+          "sorte": 1
+        }
+      }
+    ],
+    "teste": {
+      "tipo": "agilidade",
+      "dificuldade": 8,
+      "rolagem": "2d6"
+    },
+    "item": {
+      "nome": "Mapa Parcial dos Túneis",
+      "efeito": "+2 investigacao"
+    }
+  },
+  "5": {
+    "texto": "Jabez confia em você e mostra um bilhete rasgado com coordenadas. Ele teme pela segurança do negócio.",
+    "opcoes": [
+      {
+        "texto": "Guardar o bilhete e seguir Spaulding",
+        "vaiPara": "4",
+        "efeitos": {
+          "item_add": "Bilhete com coordenadas",
+          "sorte": 1
+        }
+      },
+      {
+        "texto": "Levar o bilhete a Holmes",
+        "vaiPara": "9",
+        "efeitos": {
+          "item_add": "Bilhete com coordenadas",
+          "sorte": 1
+        }
+      }
+    ],
+    "teste": {
+      "tipo": "pistas",
+      "dificuldade": 8,
+      "rolagem": "2d6"
+    },
+    "item": {
+      "nome": "Bilhete com coordenadas",
+      "efeito": "+1 investigacao"
+    }
+  },
+  "6": {
+    "texto": "Dias de cópia: a rotina é monótona, mas Watson nota marcas de terra fresca e ferramentas escondidas. A infiltração rende observações valiosas.",
+    "opcoes": [
+      {
+        "texto": "Investigar as marcas de terra",
+        "vaiPara": "10",
+        "efeitos": {
+          "sorte": 1
+        }
+      },
+      {
+        "texto": "Tentar sabotar ferramentas discretamente",
+        "vaiPara": "11",
+        "efeitos": {
+          "sorte": -1
+        }
+      }
+    ],
+    "teste": {
+      "tipo": "investigacao",
+      "dificuldade": 8,
+      "rolagem": "2d6"
+    },
+    "item": {
+      "nome": "Bilhete com coordenadas",
+      "efeito": "+1 investigacao"
+    }
+  },
+  "7": {
+    "texto": "Observando a sede, você percebe um compartimento trancado e olhares que evitam perguntas. Duncan Ross observa sua atenção com leve desconfiança. Uma chave enferrujada foi achada no local e adicionada ao inventário.",
+    "opcoes": [
+      {
+        "texto": "Tentar abrir o compartimento",
+        "vaiPara": "12",
+        "efeitos": {
+          "sorte": -1
+        }
+      },
+      {
+        "texto": "Voltar a 221B e relatar a Holmes",
+        "vaiPara": "9",
+        "efeitos": {
+          "item_add": "Relato da Sede",
+          "sorte": 1
+        }
+      }
+    ],
+    "teste": {
+      "tipo": "sorte",
+      "dificuldade": 6,
+      "rolagem": "2d6"
+    },
+    "item": {
+      "nome": "Chave Enferrujada",
+      "efeito": "+1 sorte"
+    }
+  },
+  "8": {
+    "texto": "No porão escuro, Spaulding se volta de repente e, por um instante, sua expressão se transforma — não há mais dúvidas, diante de você está John Clay, o criminoso procurado. O coração acelera, mas sua cautela prevalece: aproveitando a distração, você recolhe discretamente os mapas e anotações espalhados, documentos que podem revelar segredos ocultos. Sem ser notado, guarda as provas que reforçam sua investigação.",
+    "opcoes": [
+      {
+        "texto": "Voltar e avisar Holmes",
+        "vaiPara": "9",
+        "efeitos": {
+          "item_add": "Informações sobre Clay",
+          "sorte": 1
+        }
+      },
+      {
+        "texto": "Tentar prendê-lo sozinho",
+        "vaiPara": "13",
+        "efeitos": {
+          "sorte": -1,
+          "Vida": -1
+        }
+      }
+    ],
+    "item": {
+      "nome": "Informações sobre Clay",
+      "efeito": "+2 agilidade"
+    }
+  },
+  "9": {
+    "texto": "De volta a 221B, Holmes analisa as informações. 'Precisamos de reforços ou agir com astúcia', diz ele. Peter Jones pode ajudar. Ao voltar para pedir reforços você perdeu a chance de descobrir informações valiososa e perdeu 2 pontos de vida. Mas tudo bem, você adicionou os reforços ao inventário. ",
+    "opcoes": [
+      {
+        "texto": "Chamar Peter Jones da Scotland Yard",
+        "vaiPara": "14",
+        "efeitos": {
+          "item_add": "Reforços solicitados"
+        }
+      },
+      {
+        "texto": "Ir direto ao banco com Holmes",
+        "vaiPara": "15",
+        "efeitos": {
+          "vida": -2
+        }
+      }
+    ],
+    "item": {
+      "nome": "Envio de Reforços",
+      "efeito": "-2 vida"
+    },
+    "teste": {
+      "tipo": "investigacao",
+      "dificuldade": 8,
+      "rolagem": "2d6"
+    }
+  },
+  "10": {
+    "texto": "Seguindo as marcas, você encontra um ponto de escavação recente atrás de um armazém e um mapa parcial dos túneis.",
+    "opcoes": [
+      {
+        "texto": "Levar o mapa a Holmes",
+        "vaiPara": "9",
+        "efeitos": {
+          "item_add": "Mapa parcial dos túneis",
+          "sorte": 1
+        }
+      },
+      {
+        "texto": "Explorar a entrada indicada pelo mapa",
+        "vaiPara": "16",
+        "efeitos": {
+          "Vida": -1
+        }
+      }
+    ],
+    "item": {
+      "nome": "Mapa parcial dos túneis",
+      "efeito": "+1 investigacao"
+    }
+  },
+  "11": {
+    "texto": "Você tenta sabotar ferramentas. Se falhar, será notado e vigiado.",
+    "opcoes": [
+      {
+        "texto": "Continuar infiltrado",
+        "vaiPara": "6",
+        "efeitos": {
+          "sorte": 1
+        }
+      },
+      {
+        "texto": "Voltar a Holmes com a informação",
+        "vaiPara": "9",
+        "efeitos": {
+          "sorte": 1
+        }
+      }
+    ],
+    "item": {
+      "nome": "Ferramentas de Sabotagem",
+      "efeito": "-2 vida"
+    },
+    "teste": {
+      "tipo": "sorte",
+      "dificuldade": 9,
+      "rolagem": "2d6"
+    }
+  },
+  "12": {
+    "texto": "Forçando o compartimento, você encontra anotações com horários e um mapa parcial. Ross observa de longe, desconfiado.",
+    "opcoes": [
+      {
+        "texto": "Aceitar o trabalho para se infiltrar",
+        "vaiPara": "6",
+        "efeitos": {
+          "sorte": 1
+        }
+      },
+      {
+        "texto": "Voltar a Holmes com as provas",
+        "vaiPara": "9",
+        "efeitos": {
+          "item_add": "Mapa parcial dos túneis",
+          "sorte": 1
+        }
+      }
+    ],
+    "item": {
+      "nome": "Mapa dos túneis",
+      "efeito": "+1 sorte"
+    }
+  },
+  "13": {
+    "texto": "Ao tentar prender Clay sozinho, há luta. Ele foge e você fica ferido.",
+    "opcoes": [
+      {
+        "texto": "Levar Clay a Holmes se capturado",
+        "vaiPara": "9",
+        "efeitos": {
+          "item_add": "Prisão de Clay",
+          "sorte": 1
+        }
+      }
+    ],
+    "teste": {
+      "tipo": "forca",
+      "dificuldade": 10,
+      "rolagem": "2d6"
+    },
+    "item": {
+      "nome": "Prisão de Clay",
+      "efeito": "+1 sorte"
+    }
+  },
+  "14": {
+    "texto": "Peter Jones chega com dois agentes. A presença policial aumenta segurança, mas também visibilidade. Jones confia em Holmes. Você acaba de ganhar 4 pontos em coragem com apoio da polícia.",
+    "opcoes": [
+      {
+        "texto": "Planejar emboscada coordenada",
+        "vaiPara": "17",
+        "efeitos": {
+          "sorte": 0
+        }
+      },
+      {
+        "texto": "Fazer vigilância discreta",
+        "vaiPara": "18",
+        "efeitos": {
+          "sorte": 1
+        }
+      }
+    ],
+    "item": {
+      "nome": "Polícia",
+      "efeito": "+4 coragem"
+    }
+  },
+  "15": {
+    "texto": "No banco, Mr. Merryweather mostra plantas do subsolo e confirma: cofres cheios de ouro. O perigo é real e o tempo é curto, você perdeu 2 pontos de vida.",
+    "opcoes": [
+      {
+        "texto": "Planejar emboscada com Holmes",
+        "vaiPara": "17",
+        "efeitos": {
+          "sorte": 0
+        }
+      },
+      {
+        "texto": "Explorar os túneis sozinho",
+        "vaiPara": "16",
+        "efeitos": {
+          "Vida": -1
+        }
+      }
+    ],
+    "item": {
+      "nome": "Barras de ouro",
+      "efeito": "-2 vida"
+    },
+    "teste": {
+      "tipo": "investigacao",
+      "dificuldade": 8,
+      "rolagem": "2d6"
+    }
+  },
+  "16": {
+    "texto": "Você explora a entrada indicada pelo mapa e encontra um trecho de túnel já escavado. Há sinais de atividade recente. O túnel é perigoso e cheio de morcegos, você perdeu 2 pontos de vida.",
+    "opcoes": [
+      {
+        "texto": "Marcar a entrada e voltar a Holmes",
+        "vaiPara": "9",
+        "efeitos": {
+          "sorte": 1
+        }
+      },
+      {
+        "texto": "Entrar e mapear o corredor",
+        "vaiPara": "19",
+        "efeitos": {
+          "Vida": -1
+        }
+      }
+    ],
+    "item": {
+      "nome": "Morcegos",
+      "efeito": "-2 vida"
+    },
+    "teste": {
+      "tipo": "investigacao",
+      "dificuldade": 8,
+      "rolagem": "2d6"
+    }
+  },
+  "17": {
+    "texto": "A emboscada é planejada: posições nos túneis, vigilância nas saídas e comunicação silenciosa. Você escolhe seu papel.",
+    "opcoes": [
+      {
+        "texto": "Ficar em posição defensiva",
+        "vaiPara": "20",
+        "efeitos": {
+          "forca": 1
+        }
+      },
+      {
+        "texto": "Seguir Clay em silêncio",
+        "vaiPara": "21",
+        "efeitos": {
+          "sorte": 1
+        }
+      },
+      {
+        "texto": "Liderar a entrada com a polícia",
+        "vaiPara": "22",
+        "efeitos": {
+          "forca": 1,
+          "sorte": -1
+        }
+      }
+    ],
+    "item": {
+      "nome": "Plano de emboscada",
+      "efeito": "+1 investigacao"
+    }
+  },
+  "18": {
+    "texto": "A vigilância revela movimentos noturnos: homens carregando sacos e lanternas. Um dos homens menciona 'Morris'.",
+    "opcoes": [
+      {
+        "texto": "Seguir os homens discretamente",
+        "vaiPara": "23",
+        "efeitos": {
+          "sorte": 1,
+          "Vida": -1
+        }
+      },
+      {
+        "texto": "Interromper",
+        "vaiPara": "24",
+        "efeitos": {
+          "forca": 1,
+          "sorte": -1
+        }
+      }
+    ],
+    "item": {
+      "nome": "Relatório de vigilância",
+      "efeito": "+2 investigacao"
+    }
+  },
+  "19": {
+    "texto": "Nos túneis, o ar é úmido. Você encontra Clay e Ross trabalhando. A descoberta é perigosa e vital.",
+    "opcoes": [
+      {
+        "texto": "Atacar de surpresa",
+        "vaiPara": "25",
+        "efeitos": {
+          "forca": 1,
+          "Vida": -2,
+          "sorte": -1
+        }
+      },
+      {
+        "texto": "Observar escondido e recolher provas",
+        "vaiPara": "26",
+        "efeitos": {
+          "sorte": 1
+        }
+      }
+    ],
+    "item": {
+      "nome": "Provas dos túneis",
+      "efeito": "+1 investigacao"
+    },
+    "teste": {
+      "tipo": "forca",
+      "dificuldade": 11,
+      "rolagem": "3d6"
+    }
+  },
+  "20": {
+    "texto": "Na posição defensiva, você aguarda. Clay aparece com cúmplices. Você ganhou um ponto de investigação.",
+    "opcoes": [
+      {
+        "texto": "Atacar quando der o sinal",
+        "vaiPara": "27",
+        "efeitos": {
+          "forca": 1,
+          "Vida": -1
+        }
+      }
+    ],
+    "item": {
+      "nome": "Posição defensiva",
+      "efeito": "+1 investigacao"
+    },
+    "teste": {
+      "tipo": "forca",
+      "dificuldade": 12,
+      "rolagem": "3d6"
+    }
+  },
+  "21": {
+    "texto": "Seguindo Clay em silêncio, você descobre uma saída secreta usada para entrar e sair dos túneis.",
+    "opcoes": [
+      {
+        "texto": "Levar Clay à polícia",
+        "vaiPara": "31",
+        "efeitos": {
+          "sorte": 1
+        }
+      },
+      {
+        "texto": "Aguardar e observar a saída",
+        "vaiPara": "28",
+        "efeitos": {
+          "Vida": -1,
+          "sorte": 1
+        }
+      }
+    ],
+    "item": {
+      "nome": "Saída secreta descoberta",
+      "efeito": "+2 agilidade"
+    }
+  },
+  "22": {
+    "texto": "Liderar a entrada com a polícia é arriscado.",
+    "opcoes": [
+      {
+        "texto": "Avançar",
+        "vaiPara": "29",
+        "efeitos": {
+          "forca": 1,
+          "Vida": -1
+        }
+      },
+      {
+        "texto": "Recuar e reorganizar",
+        "vaiPara": "17",
+        "efeitos": {
+          "sorte": 0
+        }
+      }
+    ],
+    "teste": {
+      "tipo": "forca",
+      "dificuldade": 11,
+      "rolagem": "2d6"
+    },
+    "item": {
+      "nome": "Entrada arriscada",
+      "efeito": "-2 vida"
+    }
+  },
+  "23": {
+    "texto": "Seguindo os homens, você chega a um armazém onde Clay e Ross conversam com alguém do banco.",
+    "opcoes": [
+      {
+        "texto": "Refletir sobre o caso",
+        "vaiPara": "39",
+        "efeitos": {
+          "forca": 1,
+          "Vida": -2
+        }
+      },
+      {
+        "texto": "Recolher provas e voltar",
+        "vaiPara": "9",
+        "efeitos": {
+          "item_add": "Provas do armazém",
+          "sorte": 1
+        }
+      }
+    ],
+    "item": {
+      "nome": "Provas do armazém",
+      "efeito": "+1 agilidade"
+    }
+  },
+  "24": {
+    "texto": "Ao tentar prender um dos homens, há luta.",
+    "opcoes": [
+      {
+        "texto": "Interrogar o prisioneiro",
+        "vaiPara": "30",
+        "efeitos": {
+          "sorte": 1,
+          "Vida": -1
+        }
+      }
+    ],
+    "item": {
+      "nome": "Prisioneiro capturado",
+      "efeito": "-2 vida"
+    },
+    "teste": {
+      "tipo": "forca",
+      "dificuldade": 9,
+      "rolagem": "2d6"
+    }
+  },
+  "25": {
+    "texto": "O ataque é violento. Será que Clay será capturado ou vai fugir?",
+    "opcoes": [
+      {
+        "texto": "Entregar Clay à polícia",
+        "vaiPara": "31",
+        "efeitos": {
+          "item_add": "Prisão de Clay",
+          "sorte": 1
+        }
+      }
+    ],
+    "item": {
+      "nome": "Algemas improvisadas",
+      "efeito": "-2 vida"
+    },
+    "teste": {
+      "tipo": "forca",
+      "dificuldade": 13,
+      "rolagem": "3d6"
+    }
+  },
+  "26": {
+    "texto": "Você recolhe mapas, horários e nomes. Holmes confirma as deduções.",
+    "opcoes": [
+      {
+        "texto": "Entregar provas a Peter Jones",
+        "vaiPara": "14",
+        "efeitos": {
+          "item_add": "Mapas dos túneis",
+          "sorte": 1
+        }
+      },
+      {
+        "texto": "Preparar emboscada com Holmes",
+        "vaiPara": "17",
+        "efeitos": {
+          "sorte": 1
+        }
+      }
+    ],
+    "item": {
+      "nome": "Mapas dos túneis",
+      "efeito": "+1 investigacao"
+    }
+  },
+  "27": {
+    "texto": "No sinal, a emboscada é acionada. Clay é ferido e algemado. Você ganhou mais um ponto de investigação.",
+    "opcoes": [
+      {
+        "texto": "Interrogar Clay no local",
+        "vaiPara": "32",
+        "efeitos": {
+          "sorte": 1,
+          "Vida": -1
+        }
+      },
+      {
+        "texto": "Levar Clay à polícia",
+        "vaiPara": "31",
+        "efeitos": {
+          "sorte": 1
+        }
+      }
+    ],
+    "item": {
+      "nome": "Prisão de Clay",
+      "efeito": "+1 investigacao"
+    }
+  },
+  "28": {
+    "texto": "Aguarda na saída e descobre rotas secretas de fuga.",
+    "opcoes": [
+      {
+        "texto": "Voltar a Holmes com a informação",
+        "vaiPara": "9",
+        "efeitos": {
+          "sorte": 1
+        }
+      },
+      {
+        "texto": "Tentar cortar a fuga sozinho",
+        "vaiPara": "33",
+        "efeitos": {
+          "Vida": -2,
+          "forca": 1
+        }
+      }
+    ],
+    "item": {
+      "nome": "Rotas secretas de fuga",
+      "efeito": "-2 vida"
+    },
+    "teste": {
+      "tipo": "investigacao",
+      "dificuldade": 8,
+      "rolagem": "2d6"
+    }
+  },
+  "29": {
+    "texto": "Entrada frontal é rápida. Sucesso captura Clay, falha o deixa fugir.",
+    "opcoes": [
+      {
+        "texto": "Perseguir Clay pela lateral",
+        "vaiPara": "34",
+        "efeitos": {
+          "Vida": -1,
+          "forca": 1
+        }
+      },
+      {
+        "texto": "Recuar e reorganizar",
+        "vaiPara": "17",
+        "efeitos": {
+          "sorte": 0
+        }
+      }
+    ],
+    "item": {
+      "nome": "Entrada frontal",
+      "efeito": "-2 vida"
+    },
+    "teste": {
+      "tipo": "forca",
+      "dificuldade": 11,
+      "rolagem": "2d6"
+    }
+  },
+  "30": {
+    "texto": "O prisioneiro revela nomes e horários. Entre eles: William Morris.",
+    "opcoes": [
+      {
+        "texto": "Informar Merryweather",
+        "vaiPara": "15",
+        "efeitos": {
+          "sorte": 1
+        }
+      },
+      {
+        "texto": "Armar armadilha",
+        "vaiPara": "17",
+        "efeitos": {
+          "sorte": 1
+        }
+      }
+    ],
+    "item": {
+      "nome": "Nomes revelados",
+      "efeito": "+1 investigacao"
+    }
+  },
+  "31": {
+    "texto": "Clay sob custódia tenta subornar você com ouro.",
+    "opcoes": [
+      {
+        "texto": "Resistir.",
+        "vaiPara": "35",
+        "efeitos": {
+          "sorte": 0
+        }
+      },
+      {
+        "texto": "Aceitar e fugir com o ouro",
+        "vaiPara": "50",
+        "efeitos": {
+          "sorte": -3,
+          "item_add": "Ouro roubado"
+        }
+      }
+    ],
+    "item": {
+      "nome": "Ouro roubado",
+      "efeito": "+2 coragem"
+    }
+  },
+  "32": {
+    "texto": "Clay revela o restante do plano, incluindo cúmplices.",
+    "opcoes": [
+      {
+        "texto": "Prender Ross/Morris",
+        "vaiPara": "36",
+        "efeitos": {
+          "sorte": 1
+        }
+      },
+      {
+        "texto": "Organizar varredura com a polícia",
+        "vaiPara": "14",
+        "efeitos": {
+          "sorte": 1
+        }
+      }
+    ],
+    "item": {
+      "nome": "Plano completo de Clay",
+      "efeito": "+2 investigacao"
+    }
+  },
+  "33": {
+    "texto": "Tenta bloquear a fuga sozinho. Luta intensa.",
+    "opcoes": [
+      {
+        "texto": "Lutar",
+        "vaiPara": "25",
+        "efeitos": {
+          "forca": 1,
+          "Vida": -2
+        }
+      },
+      {
+        "texto": "Chamar reforços",
+        "vaiPara": "14",
+        "efeitos": {
+          "sorte": 0
+        }
+      }
+    ],
+    "item": {
+      "nome": "Bloqueio de fuga",
+      "efeito": "-2 vida"
+    },
+    "teste": {
+      "tipo": "forca",
+      "dificuldade": 12,
+      "rolagem": "3d6"
+    }
+  },
+  "34": {
+    "texto": "Perseguição em corredor estreito.",
+    "opcoes": [
+      {
+        "texto": "Avançar",
+        "vaiPara": "25",
+        "efeitos": {
+          "forca": 1,
+          "Vida": -2
+        }
+      },
+      {
+        "texto": "Recuar",
+        "vaiPara": "17",
+        "efeitos": {
+          "sorte": 0
+        }
+      }
+    ],
+    "item": {
+      "nome": "Perseguição estreita",
+      "efeito": "-2 vida"
+    },
+    "teste": {
+      "tipo": "forca",
+      "dificuldade": 12,
+      "rolagem": "3d6"
+    }
+  },
+  "35": {
+    "texto": "Resistir ao suborno exige força moral.",
+    "opcoes": [
+      {
+        "texto": "Manter integridade",
+        "vaiPara": "37",
+        "efeitos": {
+          "sorte": 1
+        }
+      }
+    ],
+    "item": {
+      "nome": "Integridade moral",
+      "efeito": "+2 investigacao"
+    },
+    "teste": {
+      "tipo": "sorte",
+      "dificuldade": 10,
+      "rolagem": "2d6"
+    }
+  },
+  "36": {
+    "texto": "Ross é preso com ajuda de Holmes. O caso começa a se fechar.",
+    "opcoes": [
+      {
+        "texto": "Concluir investigação",
+        "vaiPara": "38",
+        "efeitos": {
+          "sorte": 1
+        }
+      }
+    ],
+    "item": {
+      "nome": "Prisão de Ross",
+      "efeito": "+1 investigacao"
+    }
+  },
+  "37": {
+    "texto": "Sua integridade inspira confiança. Holmes encerra o caso com total sucesso.",
+    "opcoes": [
+      {
+        "texto": "Receber mérito público",
+        "vaiPara": "48",
+        "efeitos": {
+          "item_add": "Mérito Real",
+          "sorte": 1
+        }
+      }
+    ],
+    "item": {
+      "nome": "Mérito público",
+      "efeito": "+2 investigacao"
+    }
+  },
+  "38": {
+    "texto": "Provas suficientes levam ao fim do esquema.",
+    "opcoes": [
+      {
+        "texto": "Encerrar o caso",
+        "vaiPara": "48",
+        "efeitos": {}
+      }
+    ],
+    "item": {
+      "nome": "Provas suficientes",
+      "efeito": "+1 investigacao"
+    }
+  },
+  "39": {
+    "texto": "Interrogatórios revelam corrupção, subornos e tentativas de fuga.",
+    "opcoes": [
+      {
+        "texto": "Refletir sobre o caso",
+        "vaiPara": "40"
+      }
+    ],
+    "item": {
+      "nome": "Relatos de corrupção",
+      "efeito": "+1 investigacao"
+    }
+  },
+  "40": {
+    "texto": "Holmes citou: 'Não há nada tão enganoso quanto um fato óbvio'.",
+    "opcoes": [
+      {
+        "texto": "Voltar à vida comum",
+        "vaiPara": "48"
+      },
+      {
+        "texto": "Aceitar nova missão",
+        "vaiPara": "49",
+        "efeitos": {
+          "sorte": 1
+        }
+      }
+    ],
+    "item": {
+      "nome": "Citação de Holmes",
+      "efeito": "+2 investigacao"
+    }
+  },
+  "41": {
+    "texto": "Rumores indicam ouro desaparecido. Algo ainda respira na escuridão.",
+    "opcoes": [
+      {
+        "texto": "Investigar",
+        "vaiPara": "23"
+      },
+      {
+        "texto": "Encerrar",
+        "vaiPara": "48"
+      }
+    ],
+    "item": {
+      "nome": "Rumores de ouro desaparecido",
+      "efeito": "-2 vida"
+    },
+    "teste": {
+      "tipo": "investigacao",
+      "dificuldade": 8,
+      "rolagem": "2d6"
+    }
+  },
+  "42": {
+    "texto": "Documentos revelam elo com outro banco — a trama pode ser maior quanto se pensa.",
+    "opcoes": [
+      {
+        "texto": "Seguir a pista",
+        "vaiPara": "43",
+        "efeitos": {
+          "sorte": 1
+        }
+      },
+      {
+        "texto": "Arquivar caso",
+        "vaiPara": "48"
+      }
+    ],
+    "item": {
+      "nome": "Documentos bancários",
+      "efeito": "+1 investigacao"
+    }
+  },
+  "43": {
+    "texto": "A trilha leva a criminosos ligados à aristocracia. Uma rede mais alta do que Clay imaginava.",
+    "opcoes": [
+      {
+        "texto": "Investigar profundamente",
+        "vaiPara": "44",
+        "efeitos": {
+          "sorte": 1,
+          "Vida": -1
+        }
+      },
+      {
+        "texto": "Reportar ao governo",
+        "vaiPara": "45",
+        "efeitos": {
+          "sorte": 1
+        }
+      }
+    ],
+    "item": {
+      "nome": "Rede aristocrática",
+      "efeito": "-2 vida"
+    },
+    "teste": {
+      "tipo": "investigacao",
+      "dificuldade": 8,
+      "rolagem": "2d6"
+    }
+  },
+  "44": {
+    "texto": "Você revela um esquema nacional de lavagem de ouro.",
+    "opcoes": [
+      {
+        "texto": "Expor publicamente",
+        "vaiPara": "46",
+        "efeitos": {
+          "sorte": 2
+        }
+      },
+      {
+        "texto": "Negociar informações secretamente",
+        "vaiPara": "47",
+        "efeitos": {
+          "sorte": -2,
+          "item_add": "Empoderamento financeiro"
+        }
+      }
+    ],
+    "item": {
+      "nome": "Medalha de honra ao mérito",
+      "efeito": "+1 investigacao"
+    }
+  },
+  "45": {
+    "texto": "O Parlamento utiliza suas informações para remover cúmplices poderosos.",
+    "opcoes": [
+      {
+        "texto": "Advogar por reformas",
+        "vaiPara": "48",
+        "efeitos": {
+          "sorte": 1
+        }
+      }
+    ],
+    "item": {
+      "nome": "Informações ao Parlamento",
+      "efeito": "+1 investigacao"
+    }
+  },
+  "46": {
+    "texto": "Você se torna herói nacional, citado por Holmes com admiração genuína.",
+    "opcoes": [
+      {
+        "texto": "Encerrar com glória",
+        "vaiPara": "48"
+      }
+    ],
+    "item": {
+      "nome": "Herói Nacional",
+      "efeito": "+1 investigacao"
+    }
+  },
+  "47": {
+    "texto": "O ouro circula pelas suas mãos. Holmes percebe — mas fica em silêncio.",
+    "opcoes": [
+      {
+        "texto": "Vida de luxo às sombras",
+        "vaiPara": "50"
+      }
+    ],
+    "item": {
+      "nome": "Mérito real",
+      "efeito": "+2 investigacao"
+    }
+  },
+  "48": {
+    "final": true,
+    "tituloFinal": "FINAL 1 - RESOLUÇÃO DA TRAMA",
+    "texto": "A investigação chega ao seu ápice quando Clay é finalmente capturado durante a emboscada cuidadosamente planejada. As provas recolhidas nos túneis e no banco confirmam toda a conspiração da Liga Vermelha: o falso emprego de Jabez Wilson era apenas uma fachada para cavar um túnel da sua loja até o cofre do banco. Com o apoio da Scotland Yard e a liderança de Holmes, você garante que o ouro roubado seja recuperado e devolvido em segurança. A justiça prevaleceu, e a trama criminosa foi desmantelada por completo.",
+    "item": {
+      "nome": "Mérito real",
+      "efeito": "+1 investigacao"
+    }
+  },
+  "49": {
+    "final": true,
+    "tituloFinal": "FINAL 2 - ARQUIVAMENTO DO CASO",
+    "texto": "Holmes, ciente da complexidade política e institucional, optou por não expor os envolvidos publicamente. O caso - A LIGA DOS RUÍVOS- foi arquivado — não por falta de evidências, mas por excesso de riscos. Você aceita uma nova missão, com a certeza de que a verdade nem sempre encontra espaço na justiça formal. A capa de infiltração, os mapas e os relatórios permanecem guardados, como lembrança de uma investigação que chegou longe… mas não até o fim.",
+    "item": {
+      "nome": "Ouro roubado",
+      "efeito": "+5 forca"
+    }
+  },
+  "50": {
+    "final": true,
+    "tituloFinal": "FINAL 3 - VITÓRIA DA CORRUPÇÃO",
+    "texto": "Você foge com o ouro. A riqueza agora caminha ao seu lado, mas a sombra de Holmes nunca se afasta. O brilho das moedas não apaga a certeza de que o grande detetive conhece cada passo seu. O ouro é seu fardo e sua glória: fortuna conquistada, porém marcada pela vigilância constante de quem jamais permitirá que a justiça seja esquecida.",
+    "item": {
+      "nome": "Ouro roubado",
+      "efeito": "+5 coragem"
+    }
+  },
+  "51": {
+    "final": true,
+    "tituloFinal": "FINAL 4 - GAME OVER",
+    "texto": "O silêncio da noite londrina envolve Baker Street como um véu pesado. O último suspiro escapa de seus lábios, e a chama da investigação se apaga junto com sua vida. O mistério da Liga dos Ruivos permanece inacabado, e a verdade se perde nas sombras. GAME OVER – Sua vida chegou ao fim, e os inimigos triunfam nas sombras.",
+    "item": {
+      "nome": "Vitória do Azar",
+      "efeito": "+2 investigacao"
+    }
+  }
+}

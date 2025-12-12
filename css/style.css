@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+/* Ver o reset de css de um dos projetos anteriores */
+
+
+
+body {
+
+  background-image: url('../imagens/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  /* Para garantir que a imagem cubra toda a tela */
+  background-repeat: no-repeat;
+  /* Para evitar repetição da imagem */
+
+
+  font: sans-serif;
+  font-size: 25px;
+}
+
+.container {
+  /* Container com 100% a largura do Veiw Port  */
+  max-width: 100vw;
+  margin: 0 auto;
+  text-align: right;
+}
+
+
+
+
+/* Paleta de Cores */
+/* ------------------------------------------------------------------------------------- */
+
+:root {
+
+  --azul: #1C1C1C;
+  /*  Representa a escuridão da Londres vitoriana, 
+    as sombras e o tom investigativo e sóbrio de Holmes. 
+    
+    Idéia para aplicação: Fundo principal, tipografia primária, elementos de profundidade.
+
+    Emoção chave: Seriedade, Mistério. 
+    
+    */
+
+
+
+  --vermelho: #9A3A2A;
+  /*  Remete diretamente aos “Ruivos” e ao mistério central. 
+    Cria um ponto focal dramático e de alerta. 
+    
+    Idéia para aplicação: Títulos, chamadas de atenção, elementos de perigo ou mistério.
+
+    Emoção chave: Intensidade, Urgência. 
+    
+    */
+
+
+
+  --cinza: #4A4A4A;
+  /* Evoca a névoa londrina e a discrição.
+Funciona como base para textos secundários e fundos sutis. 
+
+Idéia para aplicação: Tipografia secundária, divisores, fundos de caixas de texto.
+
+Emoção chave: Neutralidade, Equilíbrio. 
+
+*/
+
+
+
+  --sepia: #A98A65;
+  /*  Lembra documentos antigos, mapas e arquivos.
+Conecta o design à época e ao método de pesquisa.  
+
+Idéia para aplicação: Texturas, fundos de elementos de época, bordas. 
+
+Emoção chave: Nostalgia, Autenticidade. 
+
+*/
+
+
+
+  --dourado: #C69C58;
+  /*   Ideal para pistas, números,
+detalhes cruciais e elementos que exigem atenção imediata. 
+
+Idéia para aplicação: Ícones, números de lista, detalhes de interface, elementos de luxo sutil.
+
+Emoção chave: Destaque, Importância.
+
+*/
+
+
+
+  --azul: #0E4A51;
+  /*   Representa o lado dedutivo e a calma analítica de Sherlock Holmes.
+Oferece um contraste frio ao calor do vermelho. 
+
+Idéia para aplicação: Elementos analíticos, gráficos, seções de “dedução” ou solução.
+
+Emoção chave: Lógica, Racionalidade.
+
+*/
+
+
+
+  --marrom: #6E563A;
+  /*   Reforça o clima vitoriano e a mobília de 221B Baker Street.
+Oferece solidez e profundidade.
+
+Idéia para aplicação: Fundos temáticos, caixas de citação, elementos de madeira ou couro.
+
+Emoção chave: Rusticidade, Estabilidade. 
+
+*/
+
+
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* Tipografia */
+/* ------------------------------------------------------------------------------------- */
+
+/* Oferece excelente legibilidade em tamanhos menores e em telas. 
+Sua neutralidade e clareza trazem o toque moderno e profissional necessário para o corpo do texto. 
+
+Parágrafos, legendas, listas, elementos de interface. 
+
+*/
+
+@font-face {
+  font-family: "Source";
+  src: url("../fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+/* Evoca a tipografia de alto contraste e a sofisticação das publicações vitorianas e jornais
+da época, como o Strand Magazine  
+
+Títulos principais (H1, H2), cabeçalhos de seção, citações de impacto.
+
+*/
+
+@font-face {
+  font-family: "Playfair";
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/* Uma fonte serifada clássica e mais sóbria que a Playfair, 
+  ideal para adicionar um toque de tradição e autoridade em elementos secundários.
+
+  Subtítulos (H3, H4), notas de rodapé, blocos de citação, textos de apoio.
+
+  */
+
+
+@font-face {
+  font-family: "Cormorant";
+  src: url("../fonts/Cormorant_Garamond/CormorantGaramond-VariableFont_wght.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+h1,
+h2 {
+  font-family: "Playfair", sans-serif;
+  color: var(--dourado);
+
+  font-size: 6vw;
+
+}
+
+
+
+h3 {
+  font-family: "Cormorant", serif;
+  color: var(--vermelho);
+
+   font-size: 2vw;
+}
+
+
+h4 {
+  font-family: "Cormorant", serif;
+  color: var(--dourado);
+
+   font-size: 2vw;
+
+}
+
+
+h5 {
+  font-family: "Cormorant", serif;
+  color: #000000;
+}
+
+
+
+p, ul {
+  font-family: "Source", sans-serif;
+  color: var(--cinza);
+
+}
+
+#area-historia{
+   font-family: "Source", sans-serif;
+   color: var(--cinza);
+}
+
+
+
+/* ------------------------------------------------------------------------------------- */
+
+
+
+
+/* ------------------------------------------------------------------------------------- */
+.grid {
+  display: grid;
+  /* Definido 3 linhas com seu conteúdo (auto) auto ajustável */
+  grid-template-rows: auto auto auto;
+
+  /*Definido 2 colunas */
+  grid-template-columns: 300px 1fr 300px;
+
+  gap: 20px;
+
+  text-align: left;
+
+
+  grid-template-areas:
+
+    /* cabecalho cabecalho -> Definido que o cabeçalho vai estar nas duas culunas */
+    'cabecalho cabecalho cabecalho'
+
+    /* navegacao conteudo -> Definido que a navegacao mais estar à esquerda na primeira coluna,
+     e o conteudo vai estar no restante da area  */
+    'navegacao conteudo area-inventario'
+
+    /* Rodape rodape -> Definido que o rodape vai ocupar as duas colunas */
+    'rodape rodape rodape';
+}
+
+
+.header {
+  grid-area: cabecalho;
+  background: var(--marrom);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  /* Padding de 30px em todas as laterais */
+  padding: 0px;
+
+}
+
+.menu {
+  grid-area: navegacao;
+  background: var(--sepia);
+
+  /* Padding de 40px em todas as laterais */
+  padding: 40px;
+}
+
+
+/* Novo */
+
+.inventario {
+  grid-area: area-inventario;
+  background: var(--sepia);
+
+  /* Padding de 40px em todas as laterais */
+  padding: 40px;
+}
+
+
+
+.content {
+  grid-area: conteudo;
+  background: var(--sepia);
+
+  /* Padding superior e inferior 20px e lateriais 100px  */
+  padding: 100px;
+
+  opacity: 0.7;
+}
+
+.footer {
+  grid-area: rodape;
+
+
+  background: var(--marrom);
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;        /* permite quebra em várias linhas */
+  justify-content: center;/* centraliza horizontalmente; trocar conforme necessidade */
+  align-items: center;    /* centraliza verticalmente */
+  gap: 16px;              /* espaçamento uniforme entre itens */
+  padding: 30px;
+  background: var(--marrom);
+  
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* Aplicação de media queries para se adaptar em telas menores */
+/* ------------------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+
+      'cabecalho'
+      'navegacao'
+      'conteudo'
+      'rodape';
+  }
+}
+
+
+/* ------------------------------------------------------------------------------------- */
+
+.botao-jogo {
+  /* Cor de fundo aprimorada */
+  background-color: #8B2C24;
+  /* Um vermelho mais profundo, ligeiramente mais escuro que o original --vermelho */
+  /* Você também pode usar uma variação do seu --vermelho existente, talvez escurecido: */
+  /* background-color: color-mix(in srgb, var(--vermelho) 80%, black 20%);  <-- (se seu ambiente CSS suportar color-mix) */
+
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  /* Adiciona transição para o transform */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  /* Adiciona uma leve sombra para dar profundidade */
+}
+
+.botao-jogo:hover {
+  background-color: #6A211B;
+  /* Um tom ainda mais escuro para o hover, para feedback visual */
+  transform: translateY(-2px);
+  /* Efeito sutil de "levantar" no hover */
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+  /* Sombra um pouco maior no hover */
+}
+
+.botao-jogo:active {
+  background-color: #4C1714;
+  /* Cor ainda mais escura ao clicar */
+  transform: translateY(0);
+  /* Volta à posição original ao clicar */
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  /* Sombra menor ao clicar */
+}
+
+
+#opcoes {
+  display: flex;
+  justify-content: space-between; /* um botão à esquerda, outro à direita */
+  gap: 15px;                      /* espaçamento entre eles, se houver mais */
+  flex-wrap: wrap;               /* permite quebra de linha se necessário */
+}

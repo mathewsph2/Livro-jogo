@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A liga dos ruivos - Livro Jogo</title>
+    <link rel="icon" type="image/png" href="./imagens/sherlock1.png" sizes="32x32">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+
+<body>
+
+
+    <div class="container">
+
+        <div class="grid">
+
+            <div class="header">
+
+                <img src="./imagens/sherlock1.png">
+
+                <h1>A liga dos ruivos</h1>
+
+            </div>
+
+
+            <div class="content">
+
+
+                <!-- Área principal da história -->
+                <div id="area-historia"></div>
+
+                <!-- Botões de opções -->
+                <div id="opcoes"></div>
+
+
+                <aside id="painel-dados">
+                    <h3>Role os dados para tentar recuperar VIDA.<br>
+                    <p>Atenção, se falhar, vai perder ainda mais pontos de VIDA!</p>
+                    </h3>
+                    <button class="botao-jogo" id="rolarDados">Rolar dados</button>
+                    <p id="resultado"></p>
+                </aside>
+
+
+            </div>
+
+
+            <div class="menu">
+                <h3>Ficha do Personagem</h3>
+                <p id="atributos">Vida: 10 | Força: 5 | Sorte: 3 ... </p>
+               
+                <br>
+               
+                <!-- Link para instruções -->
+              <!--  <a href="como-jogar.html" class="botao-jogo">Como jogar</a>  -->
+
+              <button class="botao-jogo" onclick="window.location.href='como-jogar.html'">Como jogar</button>
+
+
+
+
+            </div>
+
+
+            <div class="inventario">
+                <h3>Inventário</h3>
+               
+                 <ul id="inventario"></ul>
+
+            </div>
+
+
+
+            <div class="footer">
+
+                 <h4>Sherlock Holmes em - A Liga dos Ruivos</h4>
+               
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Importa o script principal como módulo -->
+    <script type="module" src="./js/main.js"></script>
+
+</body>
+
+
+</html>
